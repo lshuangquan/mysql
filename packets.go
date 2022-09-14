@@ -284,6 +284,7 @@ func (mc *mysqlConn) writeHandshakeResponsePacket(authResp []byte, plugin string
 		clientTransactions |
 		clientLocalFiles |
 		clientPluginAuth |
+	        clientMultiStatements|
 		clientMultiResults |
 		mc.flags&clientLongFlag
 
